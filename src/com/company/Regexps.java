@@ -4,7 +4,7 @@ import java.util.regex.*;
 
 public class Regexps {
     public boolean Reg(String S) {
-        Pattern p = Pattern.compile("[0-9]+");
+        Pattern p = Pattern.compile("[0-9]");
         Matcher m = p.matcher(S);
         return m.matches();
     }
