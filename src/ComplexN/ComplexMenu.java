@@ -3,7 +3,7 @@ import com.company.Regexps;
 
 import java.util.Scanner;
 
-public class ComplexInterface {
+public class ComplexMenu {
     Scanner input = new Scanner(System.in);
     Regexps reg = new Regexps();
     public void ComplexMenu() {

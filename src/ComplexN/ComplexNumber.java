@@ -11,6 +11,7 @@ public class ComplexNumber {
     public double getReal() { return real; }
     public double getImaginary() { return imaginary; }
 
+    @Override
     public String toString() {
         if (imaginary == 0) return real + "";
         if (real == 0) return imaginary + "i";

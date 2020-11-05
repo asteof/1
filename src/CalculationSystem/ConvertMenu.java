@@ -2,10 +2,11 @@ package CalculationSystem;
 import java.util.Scanner;
 import com.company.Regexps;
 
-public class ConvertInterface {
+public class ConvertMenu {
     Regexps reg = new Regexps();
+
     public void Conversion() {
-        Calculation calc = new Calculation();
+        Converter calc = new Converter();
         Scanner input = new Scanner(System.in);
         String inputStr = null;
         int baseFrom, baseTo;

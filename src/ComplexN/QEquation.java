@@ -26,7 +26,7 @@ public class QEquation {
         }
     }
 
-    public void EquationInterface() {
+    public void EquationMenu() {
         Scanner input = new Scanner(System.in);
         Regexps reg = new Regexps();
         String inputStr;

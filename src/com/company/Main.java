@@ -1,15 +1,15 @@
 package com.company;
 import java.util.Scanner;
 import CalculationSystem.*;
-import ComplexN.ComplexInterface;
+import ComplexN.ComplexMenu;
 import ComplexN.QEquation;
 
 public class Main {
 
     public static void main(String[] args) {
 //        boolean repeat = true;
-        ConvertInterface convertInterface = new ConvertInterface();
-        ComplexInterface complexInterface = new ComplexInterface();
+        ConvertMenu convertMenu = new ConvertMenu();
+        ComplexMenu complexMenu = new ComplexMenu();
         QEquation quadraticEquation = new QEquation();
         Regexps reg = new Regexps();
         Scanner input = new Scanner(System.in);
@@ -31,13 +31,13 @@ public class Main {
 
             byte res = Byte.parseByte(InterfaceChoice);
             if (res == 1) {
-                convertInterface.Conversion();
+                convertMenu.Conversion();
             }
             else if (res == 2) {
-                complexInterface.ComplexMenu();
+                complexMenu.ComplexMenu();
             }
             else if (res == 3) {
-                quadraticEquation.EquationInterface();
+                quadraticEquation.EquationMenu();
             }
             else if (res == 0) break;
             else System.out.println("Wrong input");
