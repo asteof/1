@@ -34,7 +34,7 @@ public class Main {
                 convertMenu.Conversion();
             }
             else if (res == 2) {
-                complexMenu.ComplexMenu();
+                complexMenu.complexNumbersMenu();
             }
             else if (res == 3) {
                 quadraticEquation.EquationMenu();

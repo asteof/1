@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ComplexMenu {
     Scanner input = new Scanner(System.in);
     Regexps reg = new Regexps();
-    public void ComplexMenu() {
+    public void complexNumbersMenu() {
         String inputStr;
         boolean repeat = true;
 
@@ -126,7 +126,7 @@ public class ComplexMenu {
             else {System.out.println("Input only digits:");}
         }
         double c = Double.parseDouble(in);
-        ComplexNumber newComplex = n.Scale(c, n);
+        ComplexNumber newComplex = ComplexNumber.Scale(c, n);
         System.out.println("Your number is:\n" + ShowComplexNumber(newComplex) + "\n");
     }
 }

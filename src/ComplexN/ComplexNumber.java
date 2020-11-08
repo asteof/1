@@ -31,7 +31,7 @@ public class ComplexNumber {
         return new ComplexNumber(real, imag);
     }
 
-    public ComplexNumber Scale(double alpha, ComplexNumber n) {
+    public static ComplexNumber Scale(double alpha, ComplexNumber n) {
         return new ComplexNumber(alpha * n.real, alpha * n.imaginary);
     }
 
