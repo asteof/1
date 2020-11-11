@@ -1,14 +1,15 @@
-package ComplexN;
-import com.company.Regexps;
+package com.asteof.ComplexN;
+import com.asteof.Regexps;
 
 import java.util.Scanner;
 
-public class QEquation {
+public class QuadraticEquation {
 
     public void SolveEquation(int a, int b, int c) {
 
         double discriminant = Math.pow(b, 2) - (4 * a * c);
-        double root1, root2;
+        double root1; //equation roots
+        double root2;
 
         if (discriminant > 0) {
             root1 = (-b + Math.sqrt(discriminant)) / (2 * a);

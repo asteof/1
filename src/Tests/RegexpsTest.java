@@ -1,6 +1,6 @@
 package Tests;
 
-import com.company.Regexps;
+import com.asteof.Regexps;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

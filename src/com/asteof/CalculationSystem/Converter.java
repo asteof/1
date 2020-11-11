@@ -1,4 +1,4 @@
-package CalculationSystem;
+package com.asteof.CalculationSystem;
 
 public class Converter {
 

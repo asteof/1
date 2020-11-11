@@ -1,4 +1,4 @@
-package ComplexN;
+package com.asteof.ComplexN;
 
 public class ComplexNumber {
     private final double real;
@@ -11,36 +11,28 @@ public class ComplexNumber {
     public double getReal() { return real; }
     public double getImaginary() { return imaginary; }
 
-    @Override
-    public String toString() {
-        if (imaginary == 0) return real + "";
-        if (real == 0) return imaginary + "i";
-        if (imaginary <  0) return real + " - " + (-imaginary) + "i";
-        return real + " + " + imaginary + "i";
-    }
-
     public static ComplexNumber Add(ComplexNumber a, ComplexNumber b) {
-        double real = a.real + b.real;
-        double imag = a.imaginary + b.imaginary;
+        double real = a.getReal() + b.getReal();
+        double imag = a.getImaginary() + b.getImaginary();
         return new ComplexNumber(real, imag);
     }
 
     public static ComplexNumber Subtract(ComplexNumber a, ComplexNumber b) {
-        double real = a.real - b.real;
-        double imag = a.imaginary - b.imaginary;
+        double real = a.getReal() - b.getReal();
+        double imag = a.getImaginary() - b.getImaginary();
         return new ComplexNumber(real, imag);
     }
 
     public static ComplexNumber Scale(double alpha, ComplexNumber n) {
-        return new ComplexNumber(alpha * n.real, alpha * n.imaginary);
+        return new ComplexNumber(alpha * n.getReal(), alpha * n.getImaginary());
     }
 
     public static ComplexNumber Multiply(ComplexNumber a, ComplexNumber b) {
-        if(a.imaginary == 0 && b.imaginary == 0) {
+        if(a.getImaginary() == 0 && b.getImaginary() == 0) {
             return new ComplexNumber(a.getReal() * b.getReal(), 0);
         }
-       return new ComplexNumber((a.real * b.real) - (a.imaginary * b.imaginary),
-               (a.real * b.imaginary) + (a.imaginary * b.real));
+       return new ComplexNumber((a.getReal() * b.getReal()) - (a.getImaginary() * b.getImaginary()),
+               (a.getReal() * b.getImaginary()) + (a.getImaginary() * b.getReal()));
     }
 
     public static ComplexNumber Divide(ComplexNumber a, ComplexNumber b)
@@ -62,6 +54,14 @@ public class ComplexNumber {
         double aIbR = aI*bR;
         double aRbI = aR*bI;
         return new ComplexNumber((abR+abI)/(bReal2+bImg2),(aIbR-aRbI)/(bReal2+bImg2));
+    }
+
+    @Override
+    public String toString() {
+        if (imaginary == 0) return real + "";
+        if (real == 0) return imaginary + "i";
+        if (imaginary <  0) return real + " - " + (-imaginary) + "i";
+        return real + " + " + imaginary + "i";
     }
 
 }

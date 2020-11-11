@@ -1,6 +1,6 @@
-package CalculationSystem;
+package com.asteof.CalculationSystem;
 import java.util.Scanner;
-import com.company.Regexps;
+import com.asteof.Regexps;
 
 public class ConvertMenu {
     Regexps reg = new Regexps();

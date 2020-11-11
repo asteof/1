@@ -1,5 +1,5 @@
-package ComplexN;
-import com.company.Regexps;
+package com.asteof.ComplexN;
+import com.asteof.Regexps;
 
 import java.util.Scanner;
 

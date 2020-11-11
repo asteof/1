@@ -1,22 +1,22 @@
-package com.company;
+package com.asteof;
 import java.util.Scanner;
-import CalculationSystem.*;
-import ComplexN.ComplexMenu;
-import ComplexN.QEquation;
+import com.asteof.CalculationSystem.*;
+import com.asteof.ComplexN.ComplexMenu;
+import com.asteof.ComplexN.QuadraticEquation;
 
 public class Main {
 
     public static void main(String[] args) {
-//        boolean repeat = true;
+
         ConvertMenu convertMenu = new ConvertMenu();
         ComplexMenu complexMenu = new ComplexMenu();
-        QEquation quadraticEquation = new QEquation();
+        QuadraticEquation quadraticEquation = new QuadraticEquation();
         Regexps reg = new Regexps();
         Scanner input = new Scanner(System.in);
         String InterfaceChoice;
         System.out.println("Main menu ^_^\n");
-        while(true) {
-        System.out.println("Choose option: \n\n" +
+        while (true) {
+            System.out.println("Choose option: \n\n" +
                 "1 - Convert numbers from one base to another\n" +
                 "2 - Basic operations on complex numbers\n" +
                 "3 - Quadratic equations with complex roots\n" +
@@ -24,8 +24,9 @@ public class Main {
 
             while (true) {
                 InterfaceChoice = input.nextLine();
-                if (reg.Reg(InterfaceChoice))
+                if (reg.Reg(InterfaceChoice)) {
                     break;
+                }
                 else System.out.println("Invalid entry. Input only digits");
             }
 
