@@ -1,8 +1,8 @@
 package com.asteof;
 import java.util.Scanner;
-import com.asteof.CalculationSystem.*;
-import com.asteof.ComplexN.ComplexMenu;
-import com.asteof.ComplexN.QuadraticEquation;
+import com.asteof.convertSystem.*;
+import com.asteof.complex.ComplexMenu;
+import com.asteof.complex.QuadraticEquation;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.asteof.ComplexN;
+package com.asteof.complex;
 
 public class ComplexNumber {
     private final double real;

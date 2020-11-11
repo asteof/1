@@ -1,4 +1,4 @@
-package com.asteof.ComplexN;
+package com.asteof.complex;
 import com.asteof.Regexps;
 
 import java.util.Scanner;

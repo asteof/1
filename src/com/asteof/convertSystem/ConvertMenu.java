@@ -1,4 +1,4 @@
-package com.asteof.CalculationSystem;
+package com.asteof.convertSystem;
 import java.util.Scanner;
 import com.asteof.Regexps;
 

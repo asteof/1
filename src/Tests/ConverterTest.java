@@ -1,6 +1,6 @@
 package Tests;
 
-import com.asteof.CalculationSystem.Converter;
+import com.asteof.convertSystem.Converter;
 
 import static org.junit.jupiter.api.Assertions.*;
 
